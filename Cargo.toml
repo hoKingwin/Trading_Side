@@ -1,0 +1,16 @@
+[package]
+name = "Trading_Side"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+lapin = "2.2.0"
+log = "0.4.14"
+env_logger = "0.11.5"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+rand = "0.8"
+futures-util = "0.3"
+chrono = "0.4"
+Stock_Side = { path = "../Stock_Side" }
